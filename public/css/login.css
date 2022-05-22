@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    background-color: rgb(59, 168, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form div span{
+    color: white;
+    font-size: 12px;
+}
+
+.parent{
+    padding: 20px;
+    background-color: rgba(255,255,255,.5);
+    width: 400px;
+    height: 450px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.container{
+    display: block;
+}
+
+.sizer div img{
+    display: block;
+    background-color: transparent;
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a{
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn{
+    display: block;
+    color: white;
+    background-color: rgb(59, 168, 231);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 50px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.field{
+    font-size: 12px;
+    display: block;
+    width: 300px;
+    color: black;
+    margin: auto;
+    margin-top: 30px;
+    border:none;
+    border-radius: 15px;
+    padding: 8px 10px;
+}
+
+.field:focus{
+    outline: none;
+}
+
+
+.alignment{
+    margin: auto;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .parent{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .alignment{
+        width: 90%;
+    }
+
+    .field{
+        width: 100%;
+    }
+}

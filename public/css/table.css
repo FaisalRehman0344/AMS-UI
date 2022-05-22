@@ -1,0 +1,44 @@
+
+.content{
+    display: block;
+    margin: 20px 20px 20px 45px;
+    max-width: 1000px;
+}
+
+table td{
+    font-weight: normal;
+}
+
+.create-btn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.create-btn button{
+    border: none;
+    background-color: rgb(56, 204, 119);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500px;
+    font-size: 14px;
+    box-shadow: 0 0 5px grey;
+}
+
+.create-btn button:hover{
+    font-size: 15px;
+}
+
+.table thead{
+    background-color: rgb(56, 204, 119);
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .content{
+        margin: auto;
+        margin-top: 20px;
+    }
+}

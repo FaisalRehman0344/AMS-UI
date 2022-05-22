@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script>
+        function login(){
+            var username = document.querySelector("#username").value;
+            var password = document.querySelector("#password").value;
+            if (!username || !password){
+                alert("Username and Password is required");
+            } else {
+                if (username == "engineerfaisal" && password == "12345"){
+                    sessionStorage.setItem("auth",true);
+                    location.href = "./view/dashboard"
+                } else {
+                    alert("Please enter correct Username and password");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="sizer">
+            <div class="container">
+                <img src="./assets/logo.png" alt="logo image">
+                <div class="alignment">
+                    <input type="text" placeholder="Username" name="username" id="username" class="field" required />
+                    <input type="password" placeholder="Passwrod" name="password" id="password" class="field" required />
+                    <a class="fpassword">Forget Password</a>
+                </div>
+                <button class="login-btn" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
